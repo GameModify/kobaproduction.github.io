@@ -6,6 +6,7 @@ const enUS = {
     errorPageCode: 'Error page code',
   },
   pagesTabs: {
+    undefined: 'Undefined',
     index: 'Home',
     settings: 'Settings',
   },

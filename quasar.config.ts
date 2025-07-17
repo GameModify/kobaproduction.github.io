@@ -75,7 +75,12 @@ export default defineConfig((ctx) => {
     devServer: {...devServer, open: false},
 
     framework: {
-      config: {},
+      config: {
+        appName: 'Koba Production',
+        brand: {
+          primary: '#1976D2',
+        }
+      },
       plugins: [],
     },
 

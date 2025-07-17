@@ -2,8 +2,18 @@
 
 import useAppStore from '@/shared/stores/app/store'
 import { RouterButton } from '@/shared/ui/buttons/router'
+import { useRoute } from 'vue-router'
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+import { useQuasar } from 'quasar'
 
 const store = useAppStore()
+const route = useRoute()
+const { t } = useI18n()
+const $q = useQuasar()
+
+const appName = $q.config.appName
+const currentPage = computed(() => t(`pagesTabs.${route.name?.toString()}`))
 
 </script>
 
@@ -17,7 +27,8 @@ const store = useAppStore()
         <q-avatar>
           <img src="/logo.webp" alt="Koba Production Logo">
         </q-avatar>
-        Koba Production
+        {{ appName }} /
+        {{ currentPage }}
       </q-toolbar-title>
       <RouterButton router-record-name="index" dense flat round icon="home" />
     </q-toolbar>

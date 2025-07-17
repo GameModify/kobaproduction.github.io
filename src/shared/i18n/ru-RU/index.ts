@@ -6,6 +6,7 @@ const ruRU = {
     errorPageCode: 'Код страницы ошибки',
   },
   pagesTabs: {
+    undefined: 'Неизвестно',
     index: 'Главная',
     settings: 'Настройки',
   },
