@@ -7,7 +7,7 @@ import { useWebApp, useWebAppViewport } from 'vue-tg'
 
 import useAppStore from '@/app/stores/store'
 import { DefaultHeader } from '@/app/ui/headers'
-import { DefaultSidebar } from '@/app/ui/sidebars'
+import { DefaultSideBar } from '@/app/ui/sidebars'
 import { DefaultFooter } from '@/app/ui/footers'
 import { DefaultLayout } from '@/app/ui/layouts'
 
