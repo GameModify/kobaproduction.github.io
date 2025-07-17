@@ -14,7 +14,7 @@ const devServer = USE_DEV_HTTPS ? {
   port: 3000,
 }
 
-export default defineConfig(() => {
+export default defineConfig((ctx) => {
   return {
     boot: [
       '~src/app/boot/i18n',
@@ -51,6 +51,13 @@ export default defineConfig(() => {
 
       vueRouterMode: 'hash',
       vitePlugins: [
+        ['@intlify/unplugin-vue-i18n/vite', {
+
+          ssr: ctx.modeName === 'ssr',
+
+          // you need to set i18n resource including paths !
+          include: [ fileURLToPath(new URL('./src/i18n', import.meta.url)) ]
+        }],
         [
           'vite-plugin-checker',
           {
