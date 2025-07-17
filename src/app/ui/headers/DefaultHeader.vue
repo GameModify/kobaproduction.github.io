@@ -1,9 +1,9 @@
 <script setup lang="ts">
 
-import appStore from '@/app/stores/store'
+import useAppStore from '@/app/stores/store'
 import { RouterButton } from '@/shared/ui/buttons/router'
 
-const store = appStore()
+const store = useAppStore()
 
 </script>
 

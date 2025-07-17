@@ -1,12 +1,12 @@
 <script lang="ts" setup>
 import { useQuasar } from 'quasar'
 
-import appStore from '@/app/stores/store'
+import useAppStore from '@/app/stores/store'
 // import SettingsComponentView from 'components/settings/SettingsComponent.vue'
 // import CommunityLinksView from "components/CommunityLinksView.vue";
 import NavigationWidget from '@/widgets/navigation'
 
-const store = appStore()
+const store = useAppStore()
 const quasar = useQuasar()
 </script>
 

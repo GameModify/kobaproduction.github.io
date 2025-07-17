@@ -5,14 +5,13 @@ import { Dark, useQuasar } from 'quasar'
 
 import { useWebApp, useWebAppViewport } from 'vue-tg'
 
-import appStore from '@/app/stores/store'
+import useAppStore from '@/app/stores/store'
 import { DefaultHeader } from '@/app/ui/headers'
 import { DefaultSidebar } from '@/app/ui/sidebars'
 import { DefaultFooter } from '@/app/ui/footers'
 import { DefaultLayout } from '@/app/ui/layouts'
 
-
-const store = appStore()
+const store = useAppStore()
 const tgWebApp = useWebApp()
 
 Dark.set(store.settings.darkAuto ? 'auto' : store.settings.darkTheme)
@@ -41,7 +40,7 @@ const layout = computed(() => route?.meta?.layout || DefaultLayout)
     </template>
 
     <template v-slot:sidebar>
-      <DefaultSidebar />
+      <DefaultSideBar/>
     </template>
 
     <template v-slot:page>

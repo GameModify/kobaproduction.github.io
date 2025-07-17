@@ -1,5 +1,5 @@
-import DefaultSidebar from './DefaultSidebar.vue'
+import DefaultSideBar from './DefaultSideBar.vue'
 
 export {
-  DefaultSidebar
+  DefaultSideBar
 }
