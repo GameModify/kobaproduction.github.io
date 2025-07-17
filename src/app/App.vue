@@ -5,7 +5,7 @@ import { Dark, useQuasar } from 'quasar'
 
 import { useWebApp, useWebAppViewport } from 'vue-tg'
 
-import useAppStore from '@/app/stores/store'
+import useAppStore from '@/shared/stores/app/store'
 import { DefaultHeader } from '@/app/ui/headers'
 import { DefaultSideBar } from '@/app/ui/sidebars'
 import { DefaultFooter } from '@/app/ui/footers'

@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { useQuasar } from 'quasar'
 
-import useAppStore from '@/app/stores/store'
+import useAppStore from '@/shared/stores/app/store'
 // import SettingsComponentView from 'components/settings/SettingsComponent.vue'
 // import CommunityLinksView from "components/CommunityLinksView.vue";
 import NavigationWidget from '@/widgets/navigation'
