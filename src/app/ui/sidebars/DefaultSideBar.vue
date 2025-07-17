@@ -2,8 +2,6 @@
 import { useQuasar } from 'quasar'
 
 import useAppStore from '@/shared/stores/app/store'
-// import SettingsComponentView from 'components/settings/SettingsComponent.vue'
-// import CommunityLinksView from "components/CommunityLinksView.vue";
 import NavigationWidget from '@/widgets/navigation'
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
