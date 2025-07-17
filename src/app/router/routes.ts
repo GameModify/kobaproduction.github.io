@@ -5,7 +5,12 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/',
     name: 'index',
-    component: () => import('pages/index')
+    component: () => import('pages/index'),
+  },
+  {
+    path: '/settings',
+    name: 'settings',
+    component: () => import('pages/settings'),
   },
   {
     path: '/fp-info',
