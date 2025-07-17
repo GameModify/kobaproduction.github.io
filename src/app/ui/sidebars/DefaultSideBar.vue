@@ -18,11 +18,12 @@ const menuList = computed(() => [
 
 <template>
   <q-drawer
-    v-model="store.states.sidebarOpened"
+    :model-value="true"
+    :mini="store.states.sidebarOpened"
+    mini-to-overlay
     side="left"
     :behavior="quasar.platform.is.mobile ? 'mobile' : 'desktop'"
     bordered
-    overlay
   >
     <q-list>
       <template v-for="(menuItem, index) in menuList" :key="index">
@@ -47,9 +48,8 @@ const menuList = computed(() => [
           class="q-my-sm"
         />
       </template>
-      <NavigationWidget/>
-      <!--      <SettingsComponentView/>-->
-      <!--      <CommunityLinksView/>-->
     </q-list>
+    <NavigationWidget/>
   </q-drawer>
 </template>
+
