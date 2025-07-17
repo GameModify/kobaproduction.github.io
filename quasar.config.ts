@@ -84,7 +84,7 @@ export default defineConfig((ctx) => {
     sourceFiles: {
       rootComponent: 'src/app/App.vue',
       router: 'src/app/router',
-      store: 'src/app/stores'
+      store: 'src/app/store'
     },
   }
 })
