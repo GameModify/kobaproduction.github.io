@@ -45,8 +45,6 @@ const navigationLinks = ref<LinkProps[]>([
     </q-item-section>
   </q-item>
 
-  <q-separator/>
-
   <div v-if="isShowNavigationLinks">
     <q-item
       v-for="(prop, index) in navigationLinks"
