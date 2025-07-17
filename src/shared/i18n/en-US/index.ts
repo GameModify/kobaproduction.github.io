@@ -1,4 +1,5 @@
 const enUS = {
+  basedOn: 'Based on',
   errorPages: {
     oopsNothingHere: 'Oops. Nothing here...',
     goToIndexPage: 'Go to index page',

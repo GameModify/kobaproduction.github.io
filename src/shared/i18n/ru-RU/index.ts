@@ -1,4 +1,5 @@
 const ruRU = {
+  basedOn: 'Основано на',
   errorPages: {
     oopsNothingHere: 'Уупс. Тут ничего нет...',
     goToIndexPage: 'Вернуться на главную',
