@@ -20,6 +20,8 @@ const menuList = computed(() => [
   <q-drawer
     :model-value="true"
     :mini="store.states.sidebarOpened"
+    @mouseenter="store.states.sidebarOpened = false"
+    @mouseleave="store.states.sidebarOpened = true"
     mini-to-overlay
     side="left"
     :behavior="quasar.platform.is.mobile ? 'mobile' : 'desktop'"
